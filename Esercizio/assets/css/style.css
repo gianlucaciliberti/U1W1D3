@@ -19,7 +19,7 @@ th,td {
 
 header {
     background-image: url(https://images.pexels.com/photos/146231/pexels-photo-146231.jpeg?_gl=1*1eqqu33*_ga*NjgxOTUwMzEuMTc3ODA3MjMwOQ..*_ga_8JE65Q40S6*czE3NzgwNzIzMDkkbzEkZzEkdDE3NzgwNzUwNzIkajU5JGwwJGgw);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     text-align: center;
     
@@ -29,6 +29,7 @@ header {
     font-size: 5em;
     font-weight: bold;
     font-family: Arial, sans-serif;
+    color: white;
 }
 
 #site-header p,
@@ -37,14 +38,14 @@ header {
 }
 
 #site-header a:hover {
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: black;
 }
 
 #site-header a:link,
 #site-header a:visited {
     color: white;
-    background-color: white;
+    background-color: black;
     text-decoration: none;
 }
 
@@ -68,6 +69,8 @@ footer {
 button {
     background-color: royalblue;
     color: white;
+    font-weight: bold;
+    width: 30%;
 }
 
 button:hover {
@@ -80,4 +83,15 @@ h2,h3,h4 {
 form label {
     color: #1F3D7A;
     font-weight: bold;
+}
+
+input,
+textarea,
+select {
+    width: 60%;
+    font-size: 1rem;
+}
+
+#yes {
+    width:auto;
 }
