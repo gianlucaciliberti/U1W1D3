@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=576px, minimum-scale=0.1">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <!--Headings-->
-    <header>
+    <header id="site-header">
     <h1> Gianluca Ciliberti</h1>
 
     <p> <strong>Studente AI Full Stack Developer</strong> - corso Epicode 2026 </p>
@@ -18,30 +19,38 @@
             <li> <a href="#chi-sono">CHI SONO</a></li>
             <li> <a href="#competenze">COMPETENZE</a></li>
             <li> <a href="#progetti">PROGETTI</a></li>
-            <li> <a href="#contatti">CONTATTI</a></li>
             <li> <a href="#esperienze">ESPERIENZE</a></li>
+            <li> <a href="#contatti">CONTATTI</a></li>
+            
         </ul>
     </nav>
     </header>
 
     <!--Main-->
     <main> 
-        <h2 id="chi-sono">Chi sono</h2>
-        <p> Mi chiamo Gianluca Ciliberti e sono uno studente di <strong>AI Full Stack Developer</strong> con Epicode.</p>
-        <p> Sono di Torino e sono tuttora uno studente di <em>ingegneria gestionale</em></p>
+        <section id="chi-sono">
+            <h2>Chi sono</h2>
+        </section>
+        <p> Mi chiamo Gianluca Ciliberti e sono uno studente di <strong style="color: #1F3D7A;">AI Full Stack Developer</strong> con Epicode.</p>
+        <p> Sono di Torino e sono tuttora uno studente di <em>ingegneria gestionale</em> . </p>
         
         <h2 id="competenze">Competenze</h2>
         <p>Nel corso di questi mesi con Epicode avrò la possibilità di acquisire competenze in ambito web development come:</p>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>GitHub</li>
-            <li>Visual Studio Code</li>
-        </ul>
-
-        <h2 id="progetti">Progetti</h2>
-        <p>I lavori svoltinelle prime settimane di corso.</p>
+        <div class="skillslist">
         
+        <ul>
+            <li> HTML </li>
+            <li> CSS</li>
+            <li>GitHub</li>
+            <li> Visual Studio Code</li>
+        </ul>
+        </div>
+
+        <section id="progetti">
+            <h2>Progetti</h2>
+            <p>I lavori svolti nelle prime settimane di corso.</p>
+        </section>
+
         <h3>Pagina Ricetta</h3>
         <p>Una pagina con titolo, ingredienti e procedura. Esercizio di markup semantico.</p>
         <a href="javascript:void()"target="_blank">Visualizza su GitHub</a>
@@ -55,7 +64,6 @@
             <h2 id="esperienze">Esperienze</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repellendus architecto</p>
             <table>
-                <caption>Le mie esperienze</caption>
                 <thead>
                     <tr>
                         <th>Anno</th>
@@ -84,15 +92,16 @@
         </section>
         <br /><br />
 
-        <h2 id="contatti">Contattami</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repellendus architecto quia sapiente dolore ab aliquid perspiciatis voluptatibus ullam perferendis tempora animi, iure minus id, ad sunt tempore cum eum!</p>
-		<form method="POST" action="#">
-            <label for="name">NOME COMPLETO</label>
-            <input type="text" id="name" name="name" placeholder="Inserisci il tuo nome completo" required/>
-             <label for="email">EMAIL</label>
-            <input type="email" id="email" name="email" placeholder="Inserisci la tua email" required/>
+        <section id="contatti">
+            <h2>Contattami</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repellendus architecto quia sapiente dolore ab aliquid perspiciatis voluptatibus ullam perferendis tempora animi, iure minus id, ad sunt tempore cum eum!</p>
+            <form method="POST" action="#">
+                <label for="name">NOME COMPLETO</label>
+                <input type="text" id="name" name="name" placeholder="Inserisci il tuo nome completo" required/><br /><br />
+                <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email" placeholder="Inserisci la tua email" required/><br /><br />
             <label for="date">DATA PRERERITA</label>
-            <input type="date" id="date" name="date"/>
+            <input type="date" id="date" name="date"/><br /><br />
             <label for="motivo">MOTIVO DEL CONTATTO</label>
             <select id="motivo" name="motivo">
                 <option value=""></option>
