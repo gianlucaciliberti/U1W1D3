@@ -1,5 +1,12 @@
 
 /* Regole generali */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+
 h1 {
     color: red;
 
@@ -23,7 +30,17 @@ table tr:nth-child(even) {
     background-color: aqua ;
 }
 
-th {
-    background-color: yellow;
+a:link, a:visited {
+    color: white;
+    background-color: red;
+    text-decoration: none;
 }
-    
+a:hover {
+    color: black;
+    background-color: salmon;
+}
+
+a:active {
+    color: black;
+    background-color: transparent;
+}
