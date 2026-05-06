@@ -95,3 +95,6 @@ select {
 #yes {
     width:auto;
 }
+ .focus:focus {
+    background-color: lightslategrey;
+ }
