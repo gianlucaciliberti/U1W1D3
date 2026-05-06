@@ -11,64 +11,65 @@
 <body>
     <!--Headings-->
     <header id="site-header">
-    <h1> Gianluca Ciliberti</h1>
-
-    <p> <strong>Studente AI Full Stack Developer</strong> - corso Epicode 2026 </p>
-    <nav>
-        <ul>
-            <li> <a href="#chi-sono">CHI SONO</a></li>
-            <li> <a href="#competenze">COMPETENZE</a></li>
-            <li> <a href="#progetti">PROGETTI</a></li>
-            <li> <a href="#esperienze">ESPERIENZE</a></li>
-            <li> <a href="#contatti">CONTATTI</a></li>
-            
-        </ul>
-    </nav>
+        <h1> Gianluca Ciliberti</h1>
+        <p class="tagline"> <strong>Studente AI Full Stack Developer</strong> - corso Epicode 2026 </p>
+        <nav>
+            <ul>
+                <li> <a href="#chi-sono">CHI SONO</a></li>
+                <li> <a href="#competenze">COMPETENZE</a></li>
+                <li> <a href="#progetti">PROGETTI</a></li>
+                <li> <a href="#esperienze">ESPERIENZE</a></li>
+                <li> <a href="#contatti">CONTATTI</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!--Main-->
     <main> 
+
         <section id="chi-sono">
             <h2>Chi sono</h2>
+            <p> Mi chiamo Gianluca Ciliberti e sono uno studente di <strong style="color: #1F3D7A;">AI Full Stack Developer</strong> con Epicode.</p>
+            <p> Sono di Torino e sono tuttora uno studente di <em>ingegneria gestionale</em> . </p>
         </section>
-        <p> Mi chiamo Gianluca Ciliberti e sono uno studente di <strong style="color: #1F3D7A;">AI Full Stack Developer</strong> con Epicode.</p>
-        <p> Sono di Torino e sono tuttora uno studente di <em>ingegneria gestionale</em> . </p>
-        
-        <h2 id="competenze">Competenze</h2>
-        <p>Nel corso di questi mesi con Epicode avrò la possibilità di acquisire competenze in ambito web development come:</p>
-        <div class="skillslist">
-        
-        <ul>
-            <li> HTML </li>
-            <li> CSS</li>
-            <li>GitHub</li>
-            <li> Visual Studio Code</li>
-        </ul>
-        </div>
+
+        <section id="competenze">
+            <h2>Competenze</h2>
+            <p>Nel corso di questi mesi con Epicode avrò la possibilità di acquisire competenze in ambito web development come:</p>
+            <ul class="skillslist">
+                <li> HTML </li>
+                <li> CSS</li>
+                <li>GitHub</li>
+                <li> Visual Studio Code</li>
+            </ul>
+        </section>
 
         <section id="progetti">
             <h2>Progetti</h2>
             <p>I lavori svolti nelle prime settimane di corso.</p>
-        </section>
+            
+            <article class="project">
+                <h3>Pagina Ricetta</h3>
+                <p>Una pagina con titolo, ingredienti e procedura. Esercizio di markup semantico.</p>
+                <p><a href="javascript:void()"target="_blank">Visualizza su GitHub</a></p>
+            </article>
 
-        <h3>Pagina Ricetta</h3>
-        <p>Una pagina con titolo, ingredienti e procedura. Esercizio di markup semantico.</p>
-        <a href="javascript:void()"target="_blank">Visualizza su GitHub</a>
+            <article class="project">
+                <h3>Card di presentazione</h3>
+                <p>Un biglietto digitale con nome, ruolo e link ai social. Esercizio di sintesi sulla struttura HTML.</p>
+                <p><a href="javascript:void()"target="_blank">Visualizza su GitHub</a></p>
+            </article>
+        </section><br />
 
-        <h3>Card di presentazione</h3>
-        <p>Un biglietto digitale con nome, ruolo e link ai social. Esercizio di sintesi sulla struttura HTML.</p>
-        <a href="javascript:void()"target="_blank">Visualizza su GitHub</a>
-        <br /><br />
-
-    <section>
-            <h2 id="esperienze">Esperienze</h2>
+        <section id="esperienze">
+            <h2>Esperienze</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repellendus architecto</p>
             <table>
                 <thead>
                     <tr>
-                        <th>Anno</th>
-                        <th>Ruolo</th>
-                        <th>Azienda/Scuola</th>
+                        <th scope="col">Anno</th>
+                        <th scope="col">Ruolo</th>
+                        <th scope="col">Azienda/Scuola</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -90,40 +91,59 @@
                 </tbody>
             </table>
         </section>
-        <br /><br />
+        <br />
 
         <section id="contatti">
             <h2>Contattami</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repellendus architecto quia sapiente dolore ab aliquid perspiciatis voluptatibus ullam perferendis tempora animi, iure minus id, ad sunt tempore cum eum!</p>
+            
             <form method="POST" action="#">
-                <label for="name">NOME COMPLETO</label><br />
-                <input type="text" id="name" name="name" class="focus" placeholder="Inserisci il tuo nome completo" required/><br /><br />
-                <label for="email">EMAIL</label><br />
-            <input type="email" id="email" name="email" class="focus" placeholder="Inserisci la tua email" required/><br /><br />
-            <label for="date">DATA PRERERITA</label><br />
-            <input type="date" id="date" name="date" class="focus"/><br /><br />
-            <label for="motivo">MOTIVO DEL CONTATTO</label><br />
-            <select id="motivo" name="motivo" class="focus">
-                <option value=""></option>
-                <option value="informazioni">Informazioni</option>
-                <option value="collaborazione">Collaborazione</option>
-                <option value="lavoro">Lavoro</option>
-                <option value="altro">Altro</option>
-            </select><br /><br />
-            <label for="message">Lascia un messaggio</label><br />
-            <textarea id="message" name="message" class="focus" rows="5" cols="50" placeholder="Scrivi il tuo messaggio qui..."></textarea><br /><br />
-            <input type="radio" id="yes" name="yes" value="yes" required>
-            <label for="yes">Accetto di essere ricontattato</label><br />
-            <button type="submit">Invia</button>
-        </form>
-    
-    
-    
-    
+                <p>
+                    <label for="name">NOME COMPLETO</label><br />
+                    <input type="text" id="name" name="name" class="focus" placeholder="Inserisci il tuo nome completo" required/>
+                </p>
+
+                <p>
+                    <label for="email">EMAIL</label><br />
+                    <input type="email" id="email" name="email" class="focus" placeholder="Inserisci la tua email" required/>
+                </p>
+
+                <p>
+                    <label for="date">DATA PRERERITA</label><br />
+                    <input type="date" id="date" name="date" class="focus"/>
+                </p>
+
+                <p>
+                    <label for="motivo">MOTIVO DEL CONTATTO</label><br />
+                    <select id="motivo" name="motivo" class="focus">
+                        <option value=""></option>
+                        <option value="informazioni">Informazioni</option>
+                        <option value="collaborazione">Collaborazione</option>
+                        <option value="lavoro">Lavoro</option>
+                        <option value="altro">Altro</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="message">Lascia un messaggio</label><br />
+                    <textarea id="message" name="message" class="focus" rows="5" cols="50" placeholder="Scrivi il tuo messaggio qui..."></textarea><br /><br />
+                </p>
+
+                <p>
+                    <input type="radio" id="yes" name="yes" value="yes" required>
+                    <label for="yes">Accetto di essere ricontattato</label><br />
+                    
+                </p>
+                
+                <p>
+                    <button type="submit">Invia</button>
+                </p>
+            </form>
+        </section>
     
     </main>
 
-    <footer>
+    <footer id="site-footer">
         <p>© 2026 Gianluca Ciliberti</p>
     </footer>
 </body>

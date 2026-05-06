@@ -1,52 +1,55 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-html {
-    font-family: 'Roboto', sans-serif;
-    
-
+body {
+    font-family:  'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
 }
 
-
-
-table {
-    border-collapse: collapse;
-}
-
-th,td {
-    border: 1px solid black;
-    }
-
-header {
+#site-header {
     background-image: url(https://images.pexels.com/photos/146231/pexels-photo-146231.jpeg?_gl=1*1eqqu33*_ga*NjgxOTUwMzEuMTc3ODA3MjMwOQ..*_ga_8JE65Q40S6*czE3NzgwNzIzMDkkbzEkZzEkdDE3NzgwNzUwNzIkajU5JGwwJGgw);
     background-size: cover;
     background-position: center;
     text-align: center;
-    
+    line-height: 2.5;
 }
 
 #site-header h1 {
-    font-size: 5em;
+	font-size: 5rem;
+	font-weight: bold;
+	font-style: italic;
+    color: white
+}
+
+.tagline {
+    color: white;
+    font-style: italic;
+}
+
+nav a {
+    color: white;
     font-weight: bold;
-    font-family: Arial, sans-serif;
-    color: white;
+    line-height: 2.5;
 }
 
-#site-header p,
-#site-header nav {
-    color: white;
-}
-
-#site-header a:hover {
-    color: white;
+nav a:hover {
+    color : #ffffff;
     background-color: black;
 }
 
-#site-header a:link,
-#site-header a:visited {
-    color: white;
-    background-color: black;
-    text-decoration: none;
+h2 {
+    text-align: left;
+    color:#1F3D7A;
+}
+
+#chi-sono strong {
+    color: #1F3D7A;
+}
+
+h3 {
+    text-align: left;
+    color:#1F3D7A;
 }
 
 .skillslist li:nth-child(odd) {
@@ -56,38 +59,30 @@ header {
     font-weight: bold;
 }
 
-#chi-sono strong {
-    color: #1F3D7A;
+.project:nth-of-type(odd) {
+    background-color: rgb(214, 212, 212);
 }
 
-footer {
-    background-color: darkblue;
-    text-align: center;
-    color: white;
+.project:nth-of-type(even) {
+    background-color: white;
 }
 
-button {
-    background-color: royalblue;
-    color: white;
-    font-weight: bold;
-    width: 30%;
+table {
+    border-collapse: collapse;
 }
 
-button:hover {
-    background-color: #1F3D7A;
-}
-h2,h3,h4 {
-    color: #1F3D7A;
-}
+th,td {
+    border: 1px solid black;
+    }
 
-form label {
-    color: #1F3D7A;
+label {
     font-weight: bold;
 }
+
+
 
 input,
-textarea,
-select {
+textarea {
     width: 60%;
     font-size: 1rem;
 }
@@ -98,3 +93,20 @@ select {
  .focus:focus {
     background-color: lightslategrey;
  }
+ 
+ button {
+    background-color: royalblue;
+    color: white;
+    font-weight: bold;
+    width: 30%;
+}
+
+button:hover {
+    background-color: #1F3D7A;
+}
+#site-footer {
+    background-color: darkblue;
+    text-align: center;
+    color: white;
+    line-height: 2.5;
+}
