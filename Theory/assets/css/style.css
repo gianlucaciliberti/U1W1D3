@@ -1,0 +1,29 @@
+
+/* Regole generali */
+h1 {
+    color: red;
+
+}
+
+input:focus {
+    border-color: salmon;
+    background-color: grey;
+
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+}
+
+table tr:nth-child(even) {
+    background-color: aqua ;
+}
+
+th {
+    background-color: yellow;
+}
+    
